@@ -1,0 +1,54 @@
+header{
+    background: #354254;
+    color: #ffff;
+    padding: 20px 0px 0px 20px;     
+    min-height: 60px;
+    border: #442344 5px solid;
+    font-family: 'Bevan';font-size: 30px;
+
+}
+#index{
+         
+    padding:  0px;
+    background-repeat: no-repeat;
+    height: auto; 
+    width:100%;
+    
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white; 
+ 
+}
+.centered {
+    position: absolute;
+    top: 13%;
+    left: 64%;
+    transform: translate(-60%, -50%);
+    font-size: 30px;
+    font-family: 'Annie Use Your Telescope';font-size: 50px;
+
+}
+html{
+    background-color: #04244e;
+}
+
+section {
+    border: solid #d1d1d1;
+    padding: 0.22em 0.88em;
+    box-shadow: 2px 2px 2px #b7add1a8;
+    border-radius: 11px;
+    margin: 1em;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    padding: 5px;
+}
+p {
+    color: #eeee;
+    text-align: center;
+}
