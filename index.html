@@ -13,10 +13,11 @@
 
 <body>
     <header>Just a personal site for fun</header>
-    <div class="button"> Enter my site.</div>
+    
+    <button onclick="scrollWin()" > Enter my site.</button>
     <div class="g">
         <div id="welcome">
-            <img src="./img/BG.png" class="sectionImg">
+            <img src="./img/BG.png" class="sectionImg" id="bgwelcome">
         </div>
     </div>
 
@@ -61,5 +62,11 @@
     </main>
     <footer > CCCCCCCCCCCCC</footer>
 </body>
+
+<script>
+    function scrollWin() {
+    window.scrollBy(0, 960);
+}
+</script>
 
 </html>

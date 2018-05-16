@@ -16,6 +16,9 @@ html{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+#bgwelcome{
+    max-width: 88%;
+}
 img, video {
     max-width: 100%;
 }
@@ -42,6 +45,9 @@ body {
     line-height: 1.3em;    
     margin: 20px auto;
     padding: 1em 1em;
+   
+    
+   
 }
 header {
     color: var(--header-color);
@@ -63,15 +69,16 @@ section:hover {
     color: var(--header-color);
 }
 #welcome {
-   
-   
+    text-align: center;
 }
 .g{
     border: 25px solid rgba(0, 0, 0, 0.39);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
-.button {
+button {
     padding: 15px 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
@@ -81,11 +88,12 @@ section:hover {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    width: 100%;
 }
-.button:hover {
+button:hover {
     background-color: #3e8e41}
 
-.button:active {
+button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
