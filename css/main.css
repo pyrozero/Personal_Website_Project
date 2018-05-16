@@ -20,7 +20,7 @@ html{
     max-width: 88%;
 }
 img, video {
-    max-width: 100%;
+    max-width: 70%;
 }
 #avatar{
     border-radius: 30%;
@@ -43,8 +43,13 @@ body {
     /*Google web font*/
     font-family: 'Kanit', 'Montserrat', sans-serif;
     line-height: 1.3em;    
-    margin: 20px auto;
-    padding: 1em 1em;
+    margin-top: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top:1em;
+    padding-right: 1em;
+    padding-left: 1em;
     /*overflow:hidden;  */
    
 }
@@ -138,8 +143,8 @@ section:hover {
 }
 /*CSS for footer*/
 footer {
-    background: rgb(0, 0, 0);
-    min-height: 41px;
+    background: rgba(0, 0, 0, 0.425);
+    min-height: 60px;
     margin-top: 1.5em;
     padding-bottom: 0.2em;
     padding-top: 0.5em;
@@ -195,6 +200,7 @@ footer {
         grid-gap: 1.2em;
         margin-left: 2em;
         margin-right: 2em;
+        
     }
     header {
         margin-bottom: 0.6em;
@@ -239,15 +245,16 @@ footer {
 @media screen and (min-width: 960px){
     main {
         display: grid;
-        grid-template: auto / 1fr 1fr 20px 1fr;
+        grid-template: auto / 1fr 1fr 1fr;
         grid-template-areas:
-            "me books . clock" 
-            "photos contact . .  "
+            "me books clock" 
+            "photos contact .  "
             ;
             
-        grid-gap: 1.5em;
+        grid-gap: 1em;
         margin-left: 3em;
         margin-right: 3em;
+        
     }
     header {
         margin-bottom: 1em;
