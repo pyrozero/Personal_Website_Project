@@ -2,7 +2,7 @@
 :root {
     --header-color: #70dce4;
     --max-title-size: 3em;
-    --mid-title-size: 2em;
+    --mid-title-size: 1em;
     --min-title-size: 1.5em;
     --max-sectionHeader-size: 1.5em;
     --mid-sectionHeader-size: 1.2em;
@@ -11,10 +11,8 @@
 /*Defaul style*/
 html{
     background-color: #022b41;
-    /*background-image:url('../img/BG1.jpg');
-    background-size: auto;*/
-    border: 5px solid black;
-    padding: 5px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    margin: 5px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -23,7 +21,7 @@ img, video {
 }
 #avatar{
     border-radius: 30%;
-    border: 5px solid rgba(190, 81, 8, 0.658);
+    border: 5px solid rgba(95, 40, 3, 0.658);
     background-position: center;
     max-width: 100%;
     margin: 2px;
@@ -41,6 +39,7 @@ body {
 }
 header {
     color: var(--header-color);
+    text-align: center;
     
 }
 
@@ -56,6 +55,14 @@ section:hover {
 }
 .sectionHeader {
     color: var(--header-color);
+}
+#welcome {
+    margin: 2%;
+   
+}
+.g{
+    border: 25px solid rgba(0, 0, 0, 0.39);
+    margin-bottom: 100px;
 }
 
 
