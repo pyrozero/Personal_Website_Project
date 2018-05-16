@@ -14,7 +14,8 @@
 <body>
     <header>Just a personal site for fun</header>
     
-    <button onclick="scrollWin()" > Enter my site.</button>
+    <button onclick="scrollWin(0,960)" id="btnEntersite"> Enter my site.</button>
+    <button onclick="topFunction()" id="btnBackIndex" title="Go to top">Top</button>
     <div class="g">
         <div id="welcome">
             <img src="./img/BG.png" class="sectionImg" id="bgwelcome">
@@ -64,8 +65,24 @@
 </body>
 
 <script>
-    function scrollWin() {
-    window.scrollBy(0, 960);
+    function scrollWin(x,y) {
+    window.scrollBy(x,y);
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnBackIndex").style.display = "block";
+    } else {
+        document.getElementById("btnBackIndex").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 </script>
 
