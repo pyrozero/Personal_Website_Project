@@ -264,7 +264,7 @@ footer {
     }
     header {
         margin-bottom: 1em;
-        font-size: var(--max-title-size);
+        
     }
     footer {
         display: grid;
