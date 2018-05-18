@@ -20,11 +20,15 @@ html{
     max-width: 88%;
 }
 img, video {
-    max-width: 70%;
+    max-width: 70%;  
+    
+}
+#footerbottom{
+    margin-bottom: 30px
 }
 #avatar{
     border-radius: 30%;
-    border: 5px solid rgba(95, 40, 3, 0.658);
+    
     background-position: center;
     max-width: 100%;
     margin: 2px;
@@ -35,17 +39,29 @@ img, video {
     width: 65%;
     
 }
+#avatarme{
+    border-radius: 30%;
+    border: 5px solid rgba(95, 40, 3, 0.658);
+    background-position: center;
+    max-width: 100%;
+    margin: 2px;
+    display: block;
+    margin: auto; 
+    width: 65%;
+    
+}
 #logorad{
     border-radius: 50%
 }
 
 a:visited {
     color: var(--header-color);
+    
 }
 body {
     /*Google web font*/
     font-family: 'Kanit', 'Montserrat', sans-serif;
-    line-height: 1.3em;    
+       
     margin-top: 20px ;
     margin-left: auto;
     margin-right: auto;
@@ -66,6 +82,7 @@ section {
     border: 10px solid #3f18029f;
     padding: 0.22em 0.88em;
     box-shadow: 8px 8px 2px #13010177;
+    
 }
 section:hover {
     border:10px solid green;
@@ -108,30 +125,12 @@ section:hover {
     box-shadow: 0 9px #999;
     width: 100%;
 }
-#btnBackIndex {
-    display: none;
-    position: fixed;
-    bottom: 120px;
-    right: 35px;
-    z-index: 99;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;    
-}
+
 /*clock*/
 .canvas{
-    
     background-color:#022b41;
    
 }
-
-
-
 
 
 /*Just declare the grid-area*/
@@ -154,7 +153,7 @@ section:hover {
 footer {
     background: rgba(0, 0, 0, 0.425);
     min-height: 60px;
-    margin-top: 1.5em;
+    margin-top: 15px;
     padding-bottom: 0.2em;
     padding-top: 0.5em;
     color: white;
@@ -167,7 +166,9 @@ footer {
 }
 p{
     text-align: center;
-    padding-left: 150px;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px
 }
 
 
@@ -177,10 +178,11 @@ p{
         display: grid;
         grid-template-areas: 
             "me"
-            "clock"
             "books"
             "photos"
-            "contact";
+            "contact"
+            "clock";
+
         grid-gap: 1.2em;
         margin-left: 2em;
         margin-right: 2em;
@@ -204,14 +206,17 @@ p{
 
 
 }
+
+
+
 @media screen and (min-width: 360px) and (max-width: 619px){
     main {
         display: grid;
-        grid-template: auto / 2fr 2fr;
+        grid-template: auto / 1fr 1fr;
         grid-template-areas:
-            "me clock"
-            "books photos"
-            "contact .";
+            "me books"
+            "photos contact"
+            ;
         grid-gap: 1.2em;
         margin-left: 2em;
         margin-right: 2em;
@@ -233,10 +238,10 @@ p{
 @media screen and (min-width: 620px) and (max-width: 959px){
     main {
         display: grid;
-        grid-template: auto / 2fr 2fr 2fr;
+        grid-template: auto / 2fr 2fr ;
         grid-template-areas:
-            "me books clock "
-            "photos . contact ";
+            "me books  "
+            "photos  contact  ";
         grid-gap: 1.5em;
         margin-left: 3em;
         margin-right: 3em;
@@ -247,7 +252,7 @@ p{
     }
     footer {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
     .sectionHeader {
         font-size: var(--mid-sectionHeader-size);
@@ -256,14 +261,15 @@ p{
         width: 66px;
         height: 66px;
     }
+    
 }
 @media screen and (min-width: 960px){
     main {
         display: grid;
-        grid-template: auto / 1fr 1fr 1fr;
+        grid-template: auto / 0.5fr 0.5fr ;
         grid-template-areas:
-            "me books clock" 
-            "photos contact .  "
+            "me books " 
+            "photos contact   "
             ;
             
         grid-gap: 1em;
@@ -277,13 +283,14 @@ p{
     }
     footer {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
     .sectionHeader {
         font-size: var(--max-sectionHeader-size);
     }
     .contactLogo {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
+    
 }
