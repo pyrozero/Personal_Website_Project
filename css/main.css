@@ -123,6 +123,12 @@ section:hover {
     padding: 15px;
     border-radius: 4px;    
 }
+/*clock*/
+.canvas{
+    
+    background-color:#022b41;
+   
+}
 
 
 
@@ -277,7 +283,7 @@ p{
         font-size: var(--max-sectionHeader-size);
     }
     .contactLogo {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 }
