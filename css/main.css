@@ -159,7 +159,10 @@ footer {
     width: 100%;
     
 }
-
+p{
+    text-align: center;
+    padding-left: 150px;
+}
 
 
 /*Responsive design*/
